@@ -103,12 +103,12 @@ Example
     -v /root/nulink:/home/circleci/.local/share/nulink \
     -e NULINK_KEYSTORE_PASSWORD \
     nulink/nulink nulink ursula init \
-    --signer keystore:///code/UTC--2022-09-236T5-44-41.7238382Z--e686bf9b78sd7fdfdf7df7d8f79b270 \
+    --signer keystore:///code/UTC--2022-10-12T22-57-48.314469723Z--310529366838a3af37a658d0ea50dbe542a16ac1 \
     --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
     --network horus \
     --payment-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
     --payment-network bsc_testnet \
-    --operator-address 0xe66828462jb4jbj42kkkllklkl32lwe34334 \
+    --operator-address 0x310529366838A3aF37A658D0ea50dbe542a16aC1 \
     --max-gas-price 100
 
 press enter and make screen for youe phars or type it on your notepad because you need to type after this command to continue
