@@ -85,12 +85,12 @@ please Replace xxxxxxxx and ggggggggggg with your own codes and don`t forget to 
     -v /root/nulink:/home/circleci/.local/share/nulink \
     -e NULINK_KEYSTORE_PASSWORD \
     nulink/nulink nulink ursula init \
-    --signer keystore:///code/xxxxxxxxxxxxxxxxxxxxxxx \
+    --signer keystore:///code/xxxxxxxxxxxxxxxxxx \
     --eth-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
     --network horus \
     --payment-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
     --payment-network bsc_testnet \
-    --operator-address gggggggggggggg \
+    --operator-address gggggggggggggggggg \
     --max-gas-price 100
       
       
