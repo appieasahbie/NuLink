@@ -113,9 +113,15 @@ Example
 
 press enter and make screen for youe phars or type it on your notepad because you need to type after this command to continue
 
-![phars](https://user-images.githubusercontent.com/108979536/195456235-8502b5ec-911f-4ee9-9cfb-190311aeff39.png)
+<img width="691" alt="lbadil" src="https://user-images.githubusercontent.com/108979536/195464052-3232ee19-9809-47cb-8d3c-374cbef43875.png">
+
 
  type y and enter after enter Save all info on a notepad 
+ 
+ type your phars and press enter 
+ 
+ <img width="697" alt="phars" src="https://user-images.githubusercontent.com/108979536/195464192-07b18911-168b-4738-9797-6b13fb798be1.png">
+
  
  # Launch the Node
 
