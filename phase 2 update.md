@@ -7,7 +7,7 @@
     docker ps
     
     
-<img width="733" alt="1" src="https://user-images.githubusercontent.com/108979536/197084606-a785b130-4163-4225-af94-f8dbc88f0ac9.png">
+<img width="733" alt="1" src="https://user-images.githubusercontent.com/108979536/197086125-c13a6828-b64f-4216-b1d4-d054de1cb924.png">
 
 
 you wil get results like this 
