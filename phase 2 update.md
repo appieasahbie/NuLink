@@ -63,4 +63,8 @@ copy the container id and use this command :
 
     docker logs -f ursula
     
+
+
+# Make sure putting a small amount of BNB(test) to the worker account for sending one confirmation transaction.
+
  ### END   
