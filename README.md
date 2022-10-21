@@ -35,8 +35,9 @@
  
              wget -q -O Nulink.sh https://raw.githubusercontent.com/appieasahbie/Nulink/main/Nulink.sh && chmod +x Nulink.sh && sudo /bin/bash Nulink.sh
   
-# [Migrate your validator to another machine](https://github.com/appieasahbie/Nulink-Migrate)  
-             
+# (optional) [Migrate your validator to another machine](https://github.com/appieasahbie/Nulink-Migrate)  
+
+
 # NuLink node installation 
 
  +Open poorts and ssh
@@ -44,7 +45,9 @@
      sudo ufw allow ssh
      sudo ufw allow 9151
      sudo ufw enable
-     
+   
+### After running auto install command you will see output that your keystore file is saved in /root/geth-linux-amd64-1.10.24-837382a7/keystore/UTC-XXXXX Copy the keystore file to Nulink Directory that we just created   
+   
 # NuLink Worker Installation:
 
      cp xxxxxxxxxxxxxxxxxxxxx /root/nulink
