@@ -1,113 +1,66 @@
-﻿\# Migrate your validator to another machine
+﻿\# NuLink  Phase 2 Worker  update 
+ 
+ 
+ 
+### List containers in tabular structure
 
-\### 1. Run a new full node on a new machine
+    docker ps
+    
+    
+<img width="733" alt="1" src="https://user-images.githubusercontent.com/108979536/197084606-a785b130-4163-4225-af94-f8dbc88f0ac9.png">
 
-To setup full node you can follow my guide [sei node setup for testnet](https://github.com/kj89/testnet\_manuals/blob/main/sei/README.md)
 
-\### 2. Confirm that you have the recovery seed phrase information for the active key running on the old machine
+you wil get results like this 
 
-\#### To backup your key
+<img width="487" alt="wq" src="https://user-images.githubusercontent.com/108979536/197084484-4bad996d-e0a7-42e8-8cf6-1ea142efc5bb.png">
 
-\```
 
-seid keys export mykey
+copy the container id and use this command :
 
-\```
+   <img width="739" alt="2" src="https://user-images.githubusercontent.com/108979536/197084630-a3a4711b-be58-4df4-ab38-725df08e9498.png">
+ 
+ ### 1-Stop the running node in Docker by running this two commands one bby one
+ 
+     docker kill <container ID>
+     
+     docker rm <container ID>
+     
+ Example: 
+ 
+     docker kill he8303xdede03e
+     
+    
+  <img width="368" alt="4" src="https://user-images.githubusercontent.com/108979536/197085119-1eda3329-25e1-44cc-a87b-9576cdbf19c7.png">
 
-\> \_This prints the private key that you can then paste into the file `mykey.backup`\_
 
-\#### To get list of keys
+     docker rm he8303xdede03e
+     
+  <img width="353" alt="5" src="https://user-images.githubusercontent.com/108979536/197085197-eedcea19-95aa-426a-938c-13239f1b7ca4.png">
 
-\```
 
-seid keys list
+### Pull the latest NuLink image :
 
-\```
+     docker pull nulink/nulink:latest
+     
+  <img width="518" alt="6" src="https://user-images.githubusercontent.com/108979536/197085395-45e47cee-d8a6-41ae-9906-607da3768c61.png">
 
-\### 3. Recover the active key of the old machine on the new machine
 
-\#### This can be done with the mnemonics
+     
+###  Re-launch the worker node :
 
-\```
 
-seid keys add mykey --recover
+     docker run --restart on-failure -d \
+     --name ursula \
+     -p 9151:9151 \
+     -v /root/nulink:/code \
+     -v /root/nulink:/home/circleci/.local/share/nulink \
+     -e NULINK_KEYSTORE_PASSWORD \
+     -e NULINK_OPERATOR_ETH_PASSWORD \
+     nulink/nulink nulink ursula run --no-block-until-ready
+     
+     
+### Check the logs :
 
-\```
-
-\#### Or with the backup file `mykey.backup` from the previous step
-
-\```
-
-seid keys import mykey mykey.backup
-
-\```
-
-\### 4. Wait for the new full node on the new machine to finish catching-up
-
-\#### To check synchronization status
-
-\```
-
-seid status 2>&1 | jq .SyncInfo
-
-\```
-
-\> \_`catching\_up` should be equal to `false`\_
-
-\### 5. After the new node has caught-up, stop the validator node
-
-\> \_To prevent double signing, you should stop the validator node before stopping the new full node to ensure the new node is at a greater block height than the validator node\_
-
-\> \_If the new node is behind the old validator node, then you may double-sign blocks\_
-
-\#### Stop and disable service on old machine
-
-\```
-
-sudo systemctl stop seid
-
-sudo systemctl disable seid
-
-\```
-
-\> \_The validator should start missing blocks at this point\_
-
-\### 6. Stop service on new machine
-
-\```
-
-sudo systemctl stop seid
-
-\```
-
-\### 7. Move the validator's private key from the old machine to the new machine
-
-\#### Private key is located in: `~/.seid/config/priv\_validator\_key.json`
-
-\> \_After being copied, the key `priv\_validator\_key.json` should then be removed from the old node's config directory to prevent double-signing if the node were to start back up\_
-
-\```
-
-sudo mv ~/.seid/config/priv\_validator\_key.json ~/.seid/bak\_priv\_validator\_key.json
-
-\```
-
-\### 8. Start service on a new validator node
-
-\```
-
-sudo systemctl start seid
-
-\```
-
-\> \_The new node should start signing blocks once caught-up\_
-
-\### 9. Make sure your validator is not jailed
-
-\#### To unjail your validator
-
-\```
-
-seid tx slashing unjail --chain-id $SEI\_CHAIN\_ID --from mykey --gas=auto -y
-
-\```
+    docker logs -f ursula
+    
+ ### END   
