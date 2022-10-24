@@ -29,6 +29,14 @@
  NuLink network is a decentralized solution for privacy-preserving applications developers to implement best practices and best of breed security and privacy. The    NuLink platform provides endpoint encryption and cryptographic access control. Sensitive user data can be securely shared from any user platform to cloud or decentralized storage and access to that data is granted automatically by policy in Proxy Re-Encryption or Attribute-Based Encryption. For the data user on the other side, Zero-Knowledge Proof can help them verify the data source. In more advanced privacy-preserving use cases, NuLink uses Fully Homomorphic Encryption to customize enterprise-level data computation services.
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 # Intallation One time  (automatic)
  + You can setup your Nulink testnet in few minutes by using automated script below. It will prompt you to input your wallet name!
  
@@ -36,6 +44,12 @@
              wget -q -O Nulink.sh https://raw.githubusercontent.com/appieasahbie/Nulink/main/Nulink.sh && chmod +x Nulink.sh && sudo /bin/bash Nulink.sh
   
 # (optional) [Migrate your validator to another machine](https://github.com/appieasahbie/Nulink-Migrate)  
+
+## send from metamask to your operator address
+
+![sasasa1](https://user-images.githubusercontent.com/108979536/197523410-bcf14f80-33ea-4932-a5eb-5b679e8c8ea5.png)
+![sasasasa2](https://user-images.githubusercontent.com/108979536/197523423-f2a758f5-86e9-437f-a2ba-74183e4e492d.png)
+![sasasasa3](https://user-images.githubusercontent.com/108979536/197523433-7d26f462-d613-4f8a-956d-59a533fdda78.png)
 
 
 # NuLink node installation 
