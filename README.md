@@ -29,13 +29,41 @@
  NuLink network is a decentralized solution for privacy-preserving applications developers to implement best practices and best of breed security and privacy. The    NuLink platform provides endpoint encryption and cryptographic access control. Sensitive user data can be securely shared from any user platform to cloud or decentralized storage and access to that data is granted automatically by policy in Proxy Re-Encryption or Attribute-Based Encryption. For the data user on the other side, Zero-Knowledge Proof can help them verify the data source. In more advanced privacy-preserving use cases, NuLink uses Fully Homomorphic Encryption to customize enterprise-level data computation services.
  
  
+### first faucet and staking  
+ 
+ <img width="1018" alt="1" src="https://user-images.githubusercontent.com/108979536/197893107-db7ba917-d1ac-46dc-9155-99a9e4403cf4.png">
+
+ 
+ <img width="754" alt="2" src="https://user-images.githubusercontent.com/108979536/197893121-29303cb9-4298-49eb-b67d-d4a7f9aeb798.png">
+
  
  
+ <img width="272" alt="3" src="https://user-images.githubusercontent.com/108979536/197893125-3b0b4b70-08d1-4eee-94c0-8604ae1886d3.png">
+
  
  
+ <img width="885" alt="4" src="https://user-images.githubusercontent.com/108979536/197893139-caceb196-09f6-40d3-96b2-d710a1954c4b.png">
+
+ 
+ <img width="478" alt="5" src="https://user-images.githubusercontent.com/108979536/197893159-8ae2102b-5cee-4286-8c06-835849e3ded7.png">
+
+ 
+ <img width="666" alt="6" src="https://user-images.githubusercontent.com/108979536/197893187-3e771805-20e9-4b05-b2c9-6f6c9e7ca54c.png">
+
+
+
+
+ <img width="602" alt="7" src="https://user-images.githubusercontent.com/108979536/197893208-81688ced-6eb2-4e90-badf-a7ed46a3ac6b.png">
+
  
  
- 
+ <img width="571" alt="8" src="https://user-images.githubusercontent.com/108979536/197893214-dc4b3428-9353-4877-a66d-ef669c33366e.png">
+
+
+
+ <img width="690" alt="9" src="https://user-images.githubusercontent.com/108979536/197893229-4b101f38-6fbc-440b-b421-c4b658f962d0.png">
+
+ ### now let`s install the testnet
  
 # Intallation One time  (automatic)
  + You can setup your Nulink testnet in few minutes by using automated script below. It will prompt you to input your wallet name!
@@ -44,13 +72,6 @@
              wget -q -O Nulink.sh https://raw.githubusercontent.com/appieasahbie/Nulink/main/Nulink.sh && chmod +x Nulink.sh && sudo /bin/bash Nulink.sh
   
 # (optional) [Migrate your validator to another machine](https://github.com/appieasahbie/Nulink-Migrate)  
-
-## send from metamask to your operator address
-
-![sasasa1](https://user-images.githubusercontent.com/108979536/197523410-bcf14f80-33ea-4932-a5eb-5b679e8c8ea5.png)
-![sasasasa2](https://user-images.githubusercontent.com/108979536/197523423-f2a758f5-86e9-437f-a2ba-74183e4e492d.png)
-![sasasasa3](https://user-images.githubusercontent.com/108979536/197523433-7d26f462-d613-4f8a-956d-59a533fdda78.png)
-
 
 # NuLink node installation 
 
@@ -158,48 +179,7 @@ press enter and make screen for youe phars or type it on your notepad because yo
     docker logs -f ursula
 
 
-# Bond and staking  active worker (follow the pictures one by one )
-
-(Give me 0.5 BNBs)
-
- <img width="1091" alt="binance smart chain" src="https://user-images.githubusercontent.com/108979536/195460681-4d574ae9-b9db-4a0a-8cdb-e30335dc2fdc.png">
-
- <img width="1049" alt="switch 2" src="https://user-images.githubusercontent.com/108979536/195460693-2979ad0d-5051-41d9-8c21-787dbd14c7b2.png">
-
-<img width="317" alt="3" src="https://user-images.githubusercontent.com/108979536/195460702-e231e162-5f99-44f5-90d8-b2461343bc3c.png">
-
-<img width="284" alt="5" src="https://user-images.githubusercontent.com/108979536/195460736-c73b798e-fbcc-4c36-8f53-6e5b7a87f887.png">
-
-
-<img width="299" alt="6" src="https://user-images.githubusercontent.com/108979536/195460760-8b060419-731b-44ea-9ce9-8fb7360fae8a.png">
-
-
-<img width="312" alt="7" src="https://user-images.githubusercontent.com/108979536/195460770-917eb8b2-805b-47ae-bc54-c7ad4e3166f6.png">
-
-
-
-<img width="293" alt="8" src="https://user-images.githubusercontent.com/108979536/195460795-d140bc27-bcc6-4f04-9ba4-3ba37370c0cb.png">
-
-
-<img width="1055" alt="9" src="https://user-images.githubusercontent.com/108979536/195460806-219b5f3b-dfa7-43fb-86de-81b3a4405be0.png">
-
-
-<img width="1128" alt="10" src="https://user-images.githubusercontent.com/108979536/195460809-eb254176-3c3e-4c41-8bb8-62d0805e865b.png">
-
-<img width="949" alt="11" src="https://user-images.githubusercontent.com/108979536/195460819-c1e0f562-32f9-4d11-8b4d-22a5d222448f.png">
-
-
-<img width="1031" alt="12" src="https://user-images.githubusercontent.com/108979536/195460832-9f112137-34dc-46a9-8a12-12ab547d069f.png">
-
-
-<img width="520" alt="13" src="https://user-images.githubusercontent.com/108979536/195460844-8a3d6067-6d1d-4529-b99e-1d697d4f8d4e.png">
-
-
-<img width="1104" alt="14" src="https://user-images.githubusercontent.com/108979536/195460854-365e41be-ea80-4849-a041-78c07301790f.png">
-
-
-<img width="263" alt="15" src="https://user-images.githubusercontent.com/108979536/195460864-7f5307e1-8ad9-48f5-8d83-68c4ec6b7bae.png">
-
+### after installation bond your worker 
 
 
 <img width="1052" alt="16" src="https://user-images.githubusercontent.com/108979536/195460875-60620145-67c3-43dd-95ad-b3eeff46f6b9.png">
