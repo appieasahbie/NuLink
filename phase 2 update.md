@@ -1,4 +1,4 @@
-﻿\# NuLink  Phase 2 Worker  update 
+﻿\# NuLink  Phase 2 Worker  update to version 0.2.0
  
  
  
