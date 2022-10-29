@@ -63,6 +63,9 @@ copy the container id and use this command :
 
     docker logs -f ursula
     
+    
+<img width="410" alt="swsk" src="https://user-images.githubusercontent.com/108979536/198828436-472c09a6-0081-4401-88a7-65980b1c7c6f.png">
+
 
 
 # Make sure putting a small amount of BNB(test) to the worker account for sending one confirmation transaction.
